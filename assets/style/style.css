@@ -1,0 +1,70 @@
+footer{
+position: relative;
+width: 1440px;
+height: 179px;
+
+background: linear-gradient(90.51deg, #F9A826 7.55%, #F0E68C 97.77%);
+}
+
+.footer-logo{
+	position: absolute;
+	width: 152px;
+	height: 43px;
+	left: 49px;
+	top: 68px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 43px;
+	color: #FFFFFF;
+	text-shadow: 8px 10px 22px rgba(62, 62, 62, 0.75);
+}
+
+.copyright{
+	position: absolute;
+	width: 381px;
+	height: 29px;
+	left: 479px;
+	top: 73px;
+
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 29px;
+
+	color: #000000;
+}
+
+.follow{
+position: absolute;
+width: 119px;
+height: 22px;
+left: 1066px;
+top: 85px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.45);
+}
+
+.icons a{
+	position: absolute;
+	width: 50px;
+	height: 45px;
+	top: 73px;
+}
+
+.yt{
+	left: 1202px;
+}
+.ig{
+	left: 1269px;
+}
+.fb{
+	left: 1336px;
+}
