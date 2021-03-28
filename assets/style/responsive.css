@@ -1,0 +1,42 @@
+@media (max-width: 1000px) {
+    .team {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .heading {
+        padding-top: 10px;
+      }
+
+    .heading h2 {
+        font-size: 80px;
+        line-height: 100px;
+      }
+}
+
+@media (max-width: 670px) {
+    .team {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .heading {
+        padding-top: 8px;
+      }
+
+    .heading h2 {
+        font-size: 60px;
+        line-height: 80px;
+      }
+
+      .team-bio img {
+        width: 120px;
+        height: 120px;
+      }
+
+    .txt-name {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
+    

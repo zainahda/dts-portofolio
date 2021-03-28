@@ -1,0 +1,83 @@
+*{ 
+    box-sizing : border-box;
+  }
+
+  .clear {
+    clear : left;
+  }
+
+body {
+    margin: 0;
+    font-family: "Montserrat";
+  }
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.our-wrapper {
+    background-image: url("../images/bg2.jpg");
+    background-size: cover;
+    /* width: 100%; */
+    height: 100%;
+}
+
+.heading {
+    padding-top: 20px;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 122px;
+    font-weight: bold;
+    color: #F9A826 ;
+
+  }
+
+  .lingkaran {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team {
+    padding-bottom: 50px;
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .txt-name {
+      padding-top : 15px;
+      padding-left: 30px;
+      /* color: white; */
+      /* float: left; */
+      /* flex: auto; */
+      /* padding-left: 380px; */
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: bold;
+      /* text-align: left; */
+      /* -webkit-text-stroke: 0.05em rgb(250, 246, 246); */
+  }
+
+  .team-bio {
+    /* float: left; */
+    /* padding-left: 220px; */
+    
+  }
+
+  .team-bio img {
+    /* float: left; */
+    width: 140px;
+	height: 140px;
+    border-radius: 100%;
+    border: 4px solid powderblue;
+  }
+
+
+
