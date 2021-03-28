@@ -114,6 +114,9 @@ header {
   position: relative;
   top: 30px;
 }
+.program-icon img{
+  width: 100px;
+}
 
 @media only screen and (max-width: 510px) {
   .toggleMenu {
@@ -156,5 +159,9 @@ header {
     width: 150px;
     height: 40px;
     font-size: 15px;
+  }
+  
+  .jumbotron::after {
+    top: 30px;
   }
 }
