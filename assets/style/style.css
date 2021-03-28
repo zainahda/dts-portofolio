@@ -1,21 +1,122 @@
-*{ 
-    box-sizing : border-box;
-  }
 
-  .clear {
-    clear : left;
-  }
+* {
+  font-family: Montserrat, serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url(../images/team.jpg);
+  background-size: cover;
+  height: 1024px;
+}
+.navbar {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  background: radial-gradient(
+    90.76% 34369.61% at 4.31% 24.32%,
+    rgba(255, 215, 0, 0.4) 0%,
+    rgba(255, 199, 44, 0) 100%
+  );
+}
 
-body {
-    margin: 0;
-    font-family: "Montserrat";
-  }
+#logo {
+  margin-left: 35px;
+  padding: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 43px;
+  color: #ffffff;
+  text-shadow: 8px 10px 22px rgba(62, 62, 62, 0.75);
+}
 
-.container {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-    text-align: center;
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 43px;
+  text-shadow: 8px 10px 22px rgba(62, 62, 62, 0.75);
+  z-index: 1;
+}
+
+.links a:hover {
+  color: #000;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+#btnMenu {
+  display: none;
+}
+
+.toggleMenu {
+  font-size: 22px;
+  display: none;
+}
+
+.jumbotron {
+  display: flex;
+  text-align: center;
+  margin-top: 300px;
+  flex-direction: column;
+}
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1024px;
+  background: linear-gradient(
+    180deg,
+    rgba(203, 203, 203, 0.1) 0%,
+    #121212 100%
+  );
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+.jumbotron-display h1 {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 88px;
+  color: #ffffff;
+  text-shadow: 5px 7px 5px rgba(255, 255, 255, 0.45);
+  z-index: 1;
+  position: relative;
+}
+.btn-display {
+  width: 286px;
+  height: 63px;
+  background: #f9a826;
+  box-shadow: 5px 8px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+  z-index: 1;
+  position: relative;
+  top: 30px;
+}
+.program-icon img{
+  width: 100px;
 }
 
 .our-wrapper {
@@ -81,3 +182,50 @@ body {
 
 
 
+@media only screen and (max-width: 510px) {
+  .toggleMenu {
+    display: block;
+    margin-right: 1rem;
+  }
+  .links {
+    position: fixed;
+    background-color: #21212c;
+    min-height: calc(100vh - 51px);
+    flex-flow: column;
+    width: 100%;
+    top: 51px;
+    left: 100%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    z-index: 2;
+  }
+
+  .links a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .links a:hover {
+    background-color: #316eb3;
+  }
+
+  #btnMenu:checked ~ .links {
+    left: 0;
+  }
+  .jumbotron-display h1 {
+    font-size: 25px;
+    line-height: 45px;
+  }
+  .btn-display {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+  
+  .jumbotron::after {
+    top: 30px;
+  }
+}
