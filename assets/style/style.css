@@ -1,4 +1,3 @@
-
 * {
   font-family: Montserrat, serif;
   margin: 0;
@@ -115,72 +114,106 @@ header {
   position: relative;
   top: 30px;
 }
-.program-icon img{
+.program-icon img {
   width: 100px;
 }
 
+.footer-wrapper {
+  display: flex;
+  background: linear-gradient(90.51deg, #F9A826 7.55%, #F0E68C 97.77%);
+}
+.footer-logo {
+  margin: 68px 278px 68px 49px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 43px;
+  color: #ffffff;
+  text-shadow: 8px 10px 22px rgba(62, 62, 62, 0.75);
+}
+.copyright {
+  margin: 78px 300px 72px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.icon {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  color: #000000;
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.45);
+  margin: 73px 54px 55px auto;
+}
+.follow {
+  font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 20px;
+margin-top: 10px;
+margin-right: 5px;
+}
 .our-wrapper {
-    background-image: url("../images/bg2.jpg");
-    background-size: cover;
-    /* width: 100%; */
-    height: 100%;
+  background-image: url("../images/bg2.jpg");
+  background-size: cover;
+  /* width: 100%; */
+  height: 1024px;
 }
 
 .heading {
-    padding-top: 20px;
-  }
-  
-  .heading h2 {
-    font-weight: normal;
-    font-size: 100px;
-    line-height: 122px;
-    font-weight: bold;
-    color: #F9A826 ;
+  padding-top: 20px;
+}
 
-  }
+.heading h2 {
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 122px;
+  font-weight: bold;
+  color: #f9a826;
+}
 
-  .lingkaran {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.lingkaran {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .team {
-    padding-bottom: 50px;
-    display: inline-block;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-  }
+.team {
+  padding-bottom: 50px;
+  display: inline-block;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  .txt-name {
-      padding-top : 15px;
-      padding-left: 30px;
-      /* color: white; */
-      /* float: left; */
-      /* flex: auto; */
-      /* padding-left: 380px; */
-      font-size: 24px;
-      line-height: 29px;
-      font-weight: bold;
-      /* text-align: left; */
-      /* -webkit-text-stroke: 0.05em rgb(250, 246, 246); */
-  }
+.txt-name {
+  padding-top: 15px;
+  padding-left: 30px;
+  /* color: white; */
+  /* float: left; */
+  /* flex: auto; */
+  /* padding-left: 380px; */
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+  /* text-align: left; */
+  /* -webkit-text-stroke: 0.05em rgb(250, 246, 246); */
+}
 
-  .team-bio {
-    /* float: left; */
-    /* padding-left: 220px; */
-    
-  }
+.team-bio {
+  /* float: left; */
+  /* padding-left: 220px; */
+}
 
-  .team-bio img {
-    /* float: left; */
-    width: 140px;
-	height: 140px;
-    border-radius: 100%;
-    border: 4px solid powderblue;
-  }
-
-
+.team-bio img {
+  /* float: left; */
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  border: 4px solid powderblue;
+}
 
 @media only screen and (max-width: 510px) {
   .toggleMenu {
@@ -224,7 +257,7 @@ header {
     height: 40px;
     font-size: 15px;
   }
-  
+
   .jumbotron::after {
     top: 30px;
   }
