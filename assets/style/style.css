@@ -100,7 +100,7 @@ header {
   z-index: 1;
   position: relative;
 }
-.btn .display {
+.display {
   width: 286px;
   height: 63px;
   background: #f9a826;
