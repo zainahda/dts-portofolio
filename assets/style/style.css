@@ -100,7 +100,7 @@ header {
   z-index: 1;
   position: relative;
 }
-.btn-display {
+.btn .display {
   width: 286px;
   height: 63px;
   background: #f9a826;
@@ -120,7 +120,7 @@ header {
 
 .footer-wrapper {
   display: flex;
-  background: linear-gradient(90.51deg, #F9A826 7.55%, #F0E68C 97.77%);
+  background: linear-gradient(90.51deg, #f9a826 7.55%, #f0e68c 97.77%);
 }
 .footer-logo {
   margin: 68px 278px 68px 49px;
@@ -150,25 +150,30 @@ header {
 }
 .follow {
   font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 20px;
-margin-top: 10px;
-margin-right: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-right: 5px;
 }
 .our-wrapper {
   background-image: url("../images/bg2.jpg");
   background-size: cover;
   /* width: 100%; */
   height: 1024px;
+  display: flex;
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .heading {
   padding-top: 20px;
 }
 
 .heading h2 {
-  font-weight: normal;
+  text-align: center;
   font-size: 100px;
   line-height: 122px;
   font-weight: bold;
@@ -214,51 +219,73 @@ margin-right: 5px;
   border-radius: 100%;
   border: 4px solid powderblue;
 }
+.programs {
+  display: flex;
+  flex-direction: row;
+  width: 910px;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 6px 9px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin: -50px auto 0 auto;
+  z-index: 3;
+  position: relative;
+}
+.program-icon {
+  display: flex;
+  padding: 5px 10px;
+  flex-direction: row;
+}
+.program-icon p {
+  margin: 30px 0 0 0;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+}
 
-@media only screen and (max-width: 510px) {
-  .toggleMenu {
-    display: block;
-    margin-right: 1rem;
-  }
-  .links {
-    position: fixed;
-    background-color: #21212c;
-    min-height: calc(100vh - 51px);
-    flex-flow: column;
-    width: 100%;
-    top: 51px;
-    left: 100%;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    z-index: 2;
-  }
-
-  .links a {
-    width: 100%;
-    text-align: center;
-  }
-
-  .links a:hover {
-    background-color: #316eb3;
-  }
-
-  #btnMenu:checked ~ .links {
-    left: 0;
-  }
-  .jumbotron-display h1 {
-    font-size: 25px;
-    line-height: 45px;
-  }
-  .btn-display {
-    width: 150px;
-    height: 40px;
-    font-size: 15px;
-  }
-
-  .jumbotron::after {
-    top: 30px;
-  }
+.about-wrapper {
+  background-image: url(../images/bg1.jpg);
+  margin-top: -60px;
+  background-size: cover;
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  flex-direction: row;
+}
+.about-image img {
+  padding-left: 100px;
+  margin-top: 200px;
+  width: 683px;
+  height: 558px;
+}
+.about-content {
+  flex-direction: column;
+  align-self: center;
+  padding-left: 50px;
+}
+.upper-text h2 {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 51px;
+  color: #fff;
+}
+.upper-text span {
+  color: #f9a826;
+}
+.content-text p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+.btn-content{
+  width: 175px;
+  height: 58px;
+  background: #f9a826;
+  box-shadow: 5px 8px 5px rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 15px;
 }

@@ -1,42 +1,187 @@
+/* tablet size */
 @media (max-width: 1000px) {
-    .team {
-        width: 50%;
-        margin-bottom: 40px;
-    }
+  .team {
+    width: 50%;
+    margin-bottom: 40px;
+  }
 
-    .heading {
-        padding-top: 10px;
-      }
+  .heading {
+    padding-top: 10px;
+  }
 
-    .heading h2 {
-        font-size: 80px;
-        line-height: 100px;
-      }
+  .heading h2 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .copyright {
+    left: 250px;
+    position: absolute;
+    z-index: 1;
+  }
+  .icon {
+    margin-top: -10px;
+    left: 250px;
+    position: relative;
+    z-index: 0;
+  }
+  .footer-logo {
+    margin: 50px auto;
+  }
+  .copyright {
+    margin: 100px 0;
+  }
+  .programs {
+    flex-direction: row;
+    width: 600px;
+  }
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .about-image img {
+    margin-top: 100px;
+    margin-left: 85px;
+    width: 500px;
+    height: 600px;
+  }
+  .about-content {
+    padding-left: 0;
+  }
 }
 
+
+
+/* phone size */
 @media (max-width: 670px) {
-    .team {
-        width: 100%;
-        margin-bottom: 5px;
-    }
 
-    .heading {
-        padding-top: 8px;
-      }
+  .team {
+    width: 100%;
+    margin-bottom: 5px;
+  }
 
-    .heading h2 {
-        font-size: 60px;
-        line-height: 80px;
-      }
+  .heading {
+    padding-top: 8px;
+  }
 
-      .team-bio img {
-        width: 120px;
-        height: 120px;
-      }
+  .heading h2 {
+    font-size: 45px;
+    line-height: 80px;
+  }
 
-    .txt-name {
-        font-size: 20px;
-        line-height: 22px;
-    }
+  .team-bio img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .txt-name {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .toggleMenu {
+    display: block;
+    margin-right: 1rem;
+  }
+  .links {
+    position: fixed;
+    background-color: #21212c;
+    min-height: calc(100vh - 51px);
+    flex-flow: column;
+    width: 100%;
+    top: 51px;
+    left: 100%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    z-index: 2;
+  }
+
+  .links a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .links a:hover {
+    background-color: #316eb3;
+  }
+
+  #btnMenu:checked ~ .links {
+    left: 0;
+  }
+  .jumbotron-display h1 {
+    font-size: 25px;
+    line-height: 45px;
+  }
+  .btn-display {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .jumbotron::after {
+    top: 30px;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .copyright {
+    width: 100%;
+    left: 30px;
+    position: absolute;
+    z-index: 1;
+  }
+  .icon {
+    margin-top: -10px;
+    left: 30px;
+    position: relative;
+    z-index: 0;
+  }
+  .footer-logo {
+    margin: 50px auto;
+  }
+  .copyright {
+    margin: 100px 0;
+  }
+  .team-bio img {
+    /* float: left; */
+    width: 70px;
+    height: 70px;
+  }
+  .txt-name {
+    color: #fff;
+  }
+  .programs {
+    flex-direction: column;
+    width: 300px;
+  }
+  .about-wrapper {
+    margin-top: -250px;
+  }
+  .about-content {
+    margin-left: 20px;
+  }
+  .about-image img {
+    margin-top: 200px;
+    margin-left: -60px;
+    width: 300px;
+    height: 400px;
+  }
+  .upper-text h2 {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .content-text p {
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .btn-content{
+    width: 150px;
+    height: 45px;
+    font-size: 15px;
+    margin-left: 75;
+  }
 }
-    
